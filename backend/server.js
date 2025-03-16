@@ -108,4 +108,5 @@ app.post("/schedule", (req, res) => {
     res.json(schedule);
 });
 
-app.listen(5001, () => console.log("Server running on port 5000"));
+const PORT = process.env.PORT || 5001;  // Let Vercel assign a port
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
