@@ -19,7 +19,7 @@ const Scheduler = () => {
   };
 
   const submitData = async () => {
-    const res = await axios.post("http://localhost:5001/schedule", { processes, algorithm });
+    const res = await axios.post("https://taskscheduler-mvw9.onrender.com/schedule", { processes, algorithm });
     setSchedule(res.data);
   };
 
